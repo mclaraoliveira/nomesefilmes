@@ -1,0 +1,28 @@
+body {
+    background-color:#040b1b;
+    height: 100%;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+
+}
+
+img {
+    border-radius: 8px;
+    width: 170px;
+    height: 255px;
+    box-shadow: 0px 0px 20px 0px rgb(179, 178, 180);
+    cursor: pointer;
+    transition: filter 0.3s;
+}
+
+img:hover {
+    filter: grayscale(100%);
+}
